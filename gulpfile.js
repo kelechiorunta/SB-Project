@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import uglify from 'gulp-uglify-es';
 import cleanCSS from 'gulp-clean-css';
@@ -18,7 +18,12 @@ gulp.task('css', function () {
 	return gulp
 		.src(styles)
 		.pipe(sourcemaps.init())
-		.pipe(sass())
+		.pipe(
+			sass({
+				loadPaths: ['./node_modules'],
+				quietDeps: true
+			})
+		)
 		.pipe(cleanCSS())
 		.pipe(sourcemaps.write(''))
 		.pipe(gulp.dest('dist'));

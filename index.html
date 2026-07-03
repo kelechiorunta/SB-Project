@@ -4,9 +4,881 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HTML Boilerplate</title>
+
 		<link type="text/css" href="dist/main.css" rel="stylesheet" />
+
 		<script src="dist/main.js" type="text/javascript"></script>
 	</head>
 
-	<body></body>
+	<body data-bs-theme="light" class="w-100">
+		<!-- <div class="container py-2 px-3 mx-auto justify-content-center gap-4"> -->
+
+		<!-- Header -->
+		<header
+			class="container-fluid px-5 w-90 bg-white d-flex gap-2 justify-content-between align-items-center position-fixed top-0 l z-1"
+		>
+			<img
+				width="75"
+				height="54"
+				src="/assets/logo2.png"
+				class="d-inline-block"
+			/>
+			<nav class="nav navbar d-flex small my-auto mt-4">
+				<ul
+					class="d-flex gap-5 bg-white align-items-center"
+					id="pillNav2"
+					role="tablist"
+					style="
+						--bs-nav-link-color: var(--bs-black);
+						--bs-nav-pills-link-active-color: var(--bs-primary);
+						--bs-nav-pills-link-active-bg: var(--bs-white);
+					"
+				>
+					<li
+						class="nav-item nav-underline link-underline-dark"
+						aria-current="page"
+						role="presentation"
+					>
+						<button
+							class="nav-link active"
+							id="home-tab2"
+							data-bs-toggle="tab"
+							type="button"
+							role="tab"
+							aria-selected="true"
+						>
+							Home
+						</button>
+					</li>
+					<li
+						class="nav-item nav-underline link-underline-dark"
+						role="presentation"
+					>
+						<button
+							class="nav-link"
+							id="profile-tab2"
+							data-bs-toggle="tab"
+							type="button"
+							role="tab"
+							aria-selected="false"
+						>
+							About Us
+						</button>
+					</li>
+					<li
+						class="nav-item nav-underline link-underline-dark"
+						role="presentation"
+					>
+						<button
+							class="nav-link"
+							id="contact-tab2"
+							data-bs-toggle="tab"
+							type="button"
+							role="tab"
+							aria-selected="false"
+						>
+							Projects
+						</button>
+					</li>
+					<li
+						class="nav-item nav-underline link-underline-dark"
+						role="presentation"
+					>
+						<button
+							class="nav-link"
+							id="contact-tab2"
+							data-bs-toggle="tab"
+							type="button"
+							role="tab"
+							aria-selected="false"
+						>
+							Gallery
+						</button>
+					</li>
+					<li
+						class="nav-item nav-underline link-underline-dark"
+						role="presentation"
+					>
+						<button
+							class="nav-link"
+							id="contact-tab2"
+							data-bs-toggle="tab"
+							type="button"
+							role="tab"
+							aria-selected="false"
+						>
+							Contact Us
+						</button>
+					</li>
+					<button
+						style="width: 51px; height: 51px"
+						class="bg-#E9F4F8 rounded-circle border-0 bg-primary-subtle"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-search"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+							/>
+						</svg>
+					</button>
+				</ul>
+			</nav>
+		</header>
+		<!-- 1st Carousel -->
+		<div
+			id="carouselLandingCaptions"
+			class="carousel slide"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-indicators">
+				<button
+					style="width: 20px; height: 20px"
+					type="button"
+					data-bs-target="#carouselLandingCaptions"
+					data-bs-slide-to="0"
+					class="active rounded-circle rounded-start-circle"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					style="width: 20px; height: 20px"
+					class="active rounded-circle rounded-start-circle"
+					data-bs-target="#carouselLandingCaptions"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselLandingCaptions"
+					style="width: 20px; height: 20px"
+					class="active rounded-circle rounded-start-circle"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="/assets/overlay_carousel.png"
+						class="d-block w-100"
+						alt="..."
+					/>
+					<div
+						class="carousel-caption text-center d-none d-md-block w-auto h-50"
+					>
+						<h1>Welcome to Sheiks and Bishops</h1>
+						<p class="small w-75 m-auto">
+							Sheiks & Bishops has a reputation in the Security
+							and IT Industry for designing and developing
+							practical, state-of-the-art Software and deploying
+							Hardware that are quick to implement, and easy to
+							use.
+						</p>
+						<button
+							class="nav-fill p-3 mt-5 nav-pills small text-info-emphasis nav-tabs bg-white text-black rounded-5"
+						>
+							Read More
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-arrow-right-short"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="/assets/carousel_slide_2.png"
+						class="d-block w-100"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block w-75 h-50">
+						<h1>
+							Safeguarding National Security Through Information
+							Technology
+						</h1>
+						<p class="small w-75 m-auto">
+							We leverage advanced cybersecurity, secure
+							infrastructure, and intelligent technology solutions
+							to help governments, institutions, and businesses
+							protect critical assets, strengthen resilience, and
+							respond to evolving digital threats
+						</p>
+						<button
+							class="nav-fill p-3 mt-5 nav-pills small text-info-emphasis nav-tabs bg-white text-black rounded-5"
+						>
+							Read More
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-arrow-right-short"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="/assets/carousel_slider_3.png"
+						class="d-block w-100"
+						alt="..."
+					/>
+					<div class="carousel-caption d-none d-md-block w-75 h-50">
+						<h1>
+							Building Secure Technology for a Connected Future
+						</h1>
+						<p class="small w-75 m-auto">
+							From IT infrastructure and cybersecurity to ICT
+							auditing and strategic consulting, we deliver
+							innovative solutions that empower organizations to
+							operate securely, efficiently, and with confidence
+							in a rapidly evolving digital world.
+						</p>
+						<button
+							class="nav-fill p-3 mt-5 nav-pills small text-info-emphasis nav-tabs bg-white text-black rounded-5"
+						>
+							Read More
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-arrow-right-short"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- About Us -->
+		<section class="w-100 p-5 mb-4">
+			<aside
+				class="d-flex flex-column gap-2 align-items-center justify-content-center"
+			>
+				<h6 class="text-primary w-50 m-auto text-center d-block">
+					About Us
+				</h6>
+				<h2 class="w-80 m-auto">Building Secure Digital Futures</h2>
+				<p class="small w-75">
+					We help businesses protect their people, data, and
+					technology through reliable cybersecurity solutions,
+					strategic IT services, and security-first innovation.
+				</p>
+			</aside>
+			<section
+				class="w-100 d-flex align-items-center justify-content-center"
+			>
+				<aside
+					style="width: 50%"
+					class="w-30 d-flex align-items-center justify-content-center"
+				>
+					<div
+						style="width: 90%; height: 400px; position: relative"
+						class="card d-flex justify-content-center align-items-center position-relative border-0"
+					>
+						<img
+							width="100%"
+							height="100%"
+							src="/assets/slide_2.png"
+							style="left: 0; position: absolute"
+							class="card-img-overlay position-absolute top-0"
+						/>
+					</div>
+				</aside>
+				<aside
+					style="width: 50%"
+					class="w-30 d-flex flex-column justify-content-center align-items-center gap-4 p-4"
+				>
+					<article
+						style="background-color: #bfcfed"
+						class="card card-body d-flex flex-column gap-2 text-white"
+					>
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-award"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"
+								/>
+								<path
+									d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"
+								/>
+							</svg>
+						</div>
+						<div class="card-title text-white">
+							<h3>Our Mission</h3>
+						</div>
+						<div class="card-subtitle text-white small">
+							To deliver trusted IT and cybersecurity solutions
+							that protect organizations, strengthen resilience,
+							and enable secure business growth.
+						</div>
+					</article>
+
+					<article
+						class="bg-primary card card-body d-flex flex-column gap-2 text-white border-primary-subtle"
+					>
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-eye"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"
+								/>
+								<path
+									d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+								/>
+							</svg>
+						</div>
+						<div class="card-title text-white">
+							<h3>Our Vision</h3>
+						</div>
+						<div class="card-subtitle small">
+							To deliver trusted IT and cybersecurity solutions
+							that protect organizations, strengthen resilience,
+							and enable secure business growth.
+						</div>
+					</article>
+					<!--  -->
+				</aside>
+			</section>
+			<div
+				class="m-auto w-auto d-flex justify-content-center align-items-center"
+			>
+				<button
+					class="m-auto nav-fill p-3 mt-5 small text-info-emphasis bg-white border-primary-subtle text-primary rounded-5 border-1"
+				>
+					Know More About Us
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-arrow-right-short"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+						/>
+					</svg>
+				</button>
+			</div>
+		</section>
+
+		<!-- Our Services -->
+		<section class="w-100 p-5 mb-4">
+			<aside
+				class="d-flex flex-column gap-2 align-items-center justify-content-center"
+			>
+				<h6 class="text-primary w-50 m-auto text-center d-block mb-4">
+					Our Services
+				</h6>
+			</aside>
+			<section
+				class="w-100 d-flex align-items-center justify-content-center gap-5"
+			>
+				<aside
+					style="width: 50%"
+					class="w-30 card d-flex flex-column align-items-start justify-content-center gap-2 bg-white border-light rounded-bottom-pill shadow-md"
+				>
+					<div class="card-title p-4 text-primary">
+						<h3 class="text-start w-100">IT Security</h3>
+					</div>
+					<div class="card-subtitle p-4 small">
+						Protect your business with proactive cybersecurity
+						solutions that safeguard your systems, data, and digital
+						assets against evolving threats.
+					</div>
+					<div
+						style="width: 100%; height: 200px; position: relative"
+						class="card d-flex justify-content-center align-items-center position-relative border-0"
+					>
+						<img
+							width="100%"
+							height="100%"
+							src="/assets/it_security.png"
+							class="card-img-bottom"
+						/>
+					</div>
+				</aside>
+
+				<aside
+					style="width: 50%"
+					class="w-30 card d-flex flex-column align-items-start justify-content-center gap-2 bg-white border-light rounded-bottom-pill shadow-md"
+				>
+					<div class="card-title p-4 text-primary">
+						<h3 class="text-start w-100">IT Infrastructure</h3>
+					</div>
+					<div class="card-subtitle p-4 small">
+						Build a reliable, scalable technology foundation with
+						secure network, server, cloud, and infrastructure
+						solutions designed for business growth.
+					</div>
+					<div
+						style="width: 100%; height: 200px; position: relative"
+						class="card d-flex justify-content-center align-items-center position-relative border-0"
+					>
+						<img
+							width="100%"
+							height="100%"
+							src="/assets/it_infrastructure.png"
+							class="card-img-bottom"
+						/>
+					</div>
+				</aside>
+
+				<aside
+					style="width: 50%"
+					class="w-30 card d-flex flex-column align-items-start justify-content-center gap-2 bg-white border-light rounded-bottom-pill shadow-md"
+				>
+					<div class="card-title p-4 text-primary">
+						<h3 class="text-start w-100">ICT Auditing Services</h3>
+					</div>
+					<div class="card-subtitle p-4 small">
+						Assess, strengthen, and optimize your IT environment
+						through comprehensive audits that improve compliance,
+						performance, and risk management.
+					</div>
+					<div
+						style="width: 100%; height: 200px; position: relative"
+						class="card d-flex justify-content-center align-items-center position-relative border-0"
+					>
+						<img
+							width="100%"
+							height="100%"
+							src="/assets/ict_audit.png"
+							class="card-img-bottom"
+						/>
+					</div>
+				</aside>
+			</section>
+		</section>
+
+		<!-- Certifications -->
+
+		<section
+			class="d-flex p-4 gap-4 align-items-center justify-content-center"
+		>
+			<aside class="card d-flex flex-column border-0 w-50">
+				<h6
+					style="margin-top: -4px; margin-bottom: -20px"
+					class="card-title w-100 p-4 d-block small mb-4 text-primary"
+				>
+					Certifications and Compliance
+				</h6>
+				<div class="card-title p-4 text-black">
+					<h2 style="margin-top: -20px" class="text-start w-auto">
+						Certifications
+					</h2>
+				</div>
+				<p
+					style="width: 70%; margin-top: -20px"
+					class="card-subtitle p-4 small"
+				>
+					Our commitment to quality, security, and industry best
+					practices is reflected in the certifications and
+					professional standards we pursue. Certification details will
+					be updated as they become available.
+				</p>
+				<div
+					class="w-auto d-flex justify-content-start align-items-center"
+				>
+					<button
+						class="nav-fill p-3 mt-5 small text-info-emphasis bg-white border-primary-subtle text-primary rounded-5 border-1"
+					>
+						See All Certifications
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-arrow-right-short"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+							/>
+						</svg>
+					</button>
+				</div>
+			</aside>
+
+			<aside
+				style="position: relative"
+				class="d-flex w-50 card flex-column gap-2 align-items-center justify-content-center border-0"
+			>
+				<figure
+					style="
+						width: 200px;
+						height: 400px;
+						margin-left: -50px;
+						position: absolute;
+						top: 25;
+						left: -100px;
+					"
+					class="figure-img"
+				>
+					<img
+						width="100%"
+						height="100%"
+						class="card-img-overlay"
+						src="/assets/certifications_1.png"
+					/>
+				</figure>
+				<figure style="width: 200px; height: 500px" class="figure-img">
+					<img
+						width="100%"
+						height="100%"
+						class="card-img-overlay"
+						src="/assets/certifications_2.png"
+					/>
+				</figure>
+			</aside>
+		</section>
+
+		<!-- Partner -->
+		<section
+			style="height: 500px; position: relative"
+			class="w-100 card border-0 d-flex justify-content-center align-items-center"
+		>
+			<img
+				src="/assets/trusted_partner.png"
+				class="card-img-overlay w-100 h-100 position-absolute"
+				style="top: 0; left: 0"
+			/>
+			<div class="card bg-transparent">
+				<h2 class="w-75 m-auto card-title text-center text-white">
+					Your Trusted Technology Partner Starts Here
+				</h2>
+			</div>
+
+			<div
+				class="card w-auto d-flex justify-content-center align-items-center bg-transparent"
+			>
+				<button
+					class="nav-fill p-3 mt-5 small text-info-emphasis bg-white border-primary-subtle text-primary rounded-5 border-1"
+				>
+					Contact Us
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-arrow-right-short"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+						/>
+					</svg>
+				</button>
+			</div>
+		</section>
+
+		<section class="w-100 d-flex justify-content-center align-items-center">
+			<aside class="card d-flex flex-column border-0 w-50">
+				<h6
+					style="margin-top: -4px; margin-bottom: -20px"
+					class="text-center card-title w-100 p-4 d-block small mb-4 text-primary"
+				>
+					Projects
+				</h6>
+				<div class="text-center card-title p-4 text-black">
+					<h2 style="margin-top: -20px" class="w-auto">
+						Why Trust S&B
+					</h2>
+				</div>
+				<p
+					style="width: auto; margin-top: -20px"
+					class="text-center card-subtitle p-4 small"
+				>
+					Real Storeis. Real Outcomes. Here’s what firms are saying
+					about S&B
+				</p>
+				<div
+					class="w-auto d-flex justify-content-center align-items-center"
+				>
+					<button
+						class="nav-fill p-3 mt-5 small text-info-emphasis bg-white border-primary-subtle text-primary rounded-5 border-1"
+					>
+						Explore Projects
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-arrow-right-short"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+							/>
+						</svg>
+					</button>
+				</div>
+			</aside>
+		</section>
+
+		<!-- Second Carousel -->
+
+		<!-- 1st Carousel -->
+		<div
+			id="carouselTestimonialCaptions"
+			class="carousel slide"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carouselTestimonialCaptions"
+					data-bs-slide-to="0"
+					class="active bg-black"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button
+					type="button"
+					class="active bg-black"
+					data-bs-target="#carouselTestimonialCaptions"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselTestimonialCaptions"
+					class="active bg-black"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
+			<div class="carousel-inner">
+				<!-- Carousel 1 -->
+
+				<section
+					style="height: 500px; width: 100%"
+					class="carousel-item active d-flex align-items-center justify-content-between p-5"
+				>
+					<figure
+						style="width: 40%; height: 100%"
+						class="d-block object-fit-cover figure-img rounded-4"
+					>
+						<img
+							src="/assets/jega.png"
+							class="w-100 h-100 object-fit-cover rounded-4"
+							alt="..."
+						/>
+					</figure>
+
+					<div
+						style="
+							width: 100%;
+							height: 10;
+							background-color: #f9f9fe;
+						"
+						class="card position-relative p-5 rounded-top-0 border-start-0 border-light gap-4 text-center w-75 text-black h-100 d-flex flex-column justify-content-center"
+					>
+						<button
+							style="
+								width: max-content;
+								justify-self: end;
+								float: right;
+							"
+							class="p-2 small border-primary-subtle bg-primary text-white rounded-1 align-self-end"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-arrow-right-short"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+								/>
+							</svg>
+							75%
+						</button>
+						<blockquote>
+							<h4 class="text-start w-75">
+								"Their proactive approach to cybersecurity has
+								strengthened our infrastructure and minimized
+								operational risks."
+							</h4>
+						</blockquote>
+						<div
+							class="d-flex justify-content-between align-items-center"
+						>
+							<div>
+								<h4 class="small fw-bold text-start">
+									Matthew Jega
+								</h4>
+								<p class="small m-auto text-start">CTO</p>
+							</div>
+
+							<button
+								class="p-3 small bg-white text-black rounded-5"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-arrow-right-short"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+									/>
+								</svg>
+								See Project
+							</button>
+						</div>
+						<div
+							class="carousel-caption text-center d-block w-auto h-50"
+						>
+							<h1>Sports</h1>
+						</div>
+					</div>
+				</section>
+
+				<!-- Carousel 2 -->
+				<!-- Carousel 1 -->
+
+				<section
+					style="height: 500px; width: 100%"
+					class="carousel-item active d-flex align-items-center justify-content-between p-5"
+				>
+					<figure
+						style="width: 40%; height: 100%"
+						class="d-block object-fit-cover figure-img rounded-4"
+					>
+						<img
+							src="/assets/ict_audit.png"
+							class="w-100 h-100 object-fit-cover rounded-4"
+							alt="..."
+						/>
+					</figure>
+
+					<div
+						style="
+							width: 100%;
+							height: 10;
+							background-color: #f9f9fe;
+						"
+						class="card position-relative p-5 rounded-top-0 border-start-0 border-light gap-4 text-center w-75 text-black h-100 d-flex flex-column justify-content-center"
+					>
+						<button
+							style="
+								width: max-content;
+								justify-self: end;
+								float: right;
+							"
+							class="p-2 small border-primary-subtle bg-primary text-white rounded-1 align-self-end"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-arrow-right-short"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+								/>
+							</svg>
+							75%
+						</button>
+						<blockquote>
+							<h4 class="text-start w-75">
+								"Their proactive approach to cybersecurity has
+								strengthened our infrastructure and minimized
+								operational risks."
+							</h4>
+						</blockquote>
+						<div
+							class="d-flex justify-content-between align-items-center"
+						>
+							<div>
+								<h4 class="small fw-bold text-start">
+									Matthew Jega
+								</h4>
+								<p class="small m-auto text-start">CTO</p>
+							</div>
+
+							<button
+								class="p-3 small bg-white text-black rounded-5"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-arrow-right-short"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+									/>
+								</svg>
+								See Project
+							</button>
+						</div>
+						<div
+							class="carousel-caption text-center d-block w-auto h-50"
+						>
+							<h1>Sports</h1>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
 </html>
